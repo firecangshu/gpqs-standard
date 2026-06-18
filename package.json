@@ -1,0 +1,35 @@
+{
+  "name": "gpqs-standard",
+  "version": "1.0.0",
+  "description": "GPQS (General Project Quality Standard) - 通用项目质量评估标准",
+  "description_en": "GPQS (General Project Quality Standard) - A general-purpose project quality assessment standard",
+  "main": "index.js",
+  "scripts": {
+    "init": "node tools/cli/init.js",
+    "score": "node tools/cli/score.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "quality-assurance",
+    "project-management",
+    "scoring-system",
+    "ci-cd",
+    "open-source",
+    "zh",
+    "en"
+  ],
+  "author": "firecangshu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/firecangshu/gpqs-standard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/firecangshu/gpqs-standard/issues"
+  },
+  "homepage": "https://github.com/firecangshu/gpqs-standard#readme",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "ajv": "^8.12.0"
+  }
+}
