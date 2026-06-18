@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/firecangshu/gpqs-standard#readme",
   "dependencies": {
-    "js-yaml": "^4.1.0",
-    "ajv": "^8.12.0"
+    "ajv": "^8.12.0",
+    "js-yaml": "^4.2.0"
   }
 }

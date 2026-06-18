@@ -1,0 +1,15 @@
+{
+  "name": "menshen-cli",
+  "version": "1.0.0",
+  "description": "门神 (Menshen) - GPQS 项目质量评估工具",
+  "main": "menshen.js",
+  "scripts": {
+    "test": "node menshen.js --help"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "keywords": ["gpqs", "quality", "assessment", "gatekeeper"],
+  "author": "踏歌行智策通 Team",
+  "license": "MIT"
+}
