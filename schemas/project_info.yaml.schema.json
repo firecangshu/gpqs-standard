@@ -1,0 +1,133 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Project Info Schema",
+  "type": "object",
+  "required": ["project_name", "version", "description", "tech_stack", "owner", "project_type", "created_date", "last_updated"],
+  "properties": {
+    "project_name": {
+      "type": "string",
+      "description": "项目中文名称 / Project Chinese name"
+    },
+    "project_name_en": {
+      "type": "string",
+      "description": "项目英文名称 / Project English name"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^v?\\d+\\.\\d+\\.\\d+$",
+      "description": "项目版本号（语义化版本）/ Project version (semantic versioning)"
+    },
+    "description": {
+      "type": "string",
+      "description": "项目中文描述 / Project description in Chinese"
+    },
+    "description_en": {
+      "type": "string",
+      "description": "项目英文描述 / Project description in English"
+    },
+    "tech_stack": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "description": "技术栈列表 / Tech stack list"
+    },
+    "owner": {
+      "type": "object",
+      "required": ["name", "email"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "负责人姓名 / Owner name"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "description": "负责人邮箱 / Owner email"
+        },
+        "role": {
+          "type": "string",
+          "description": "负责人角色 / Owner role"
+        }
+      }
+    },
+    "project_type": {
+      "type": "string",
+      "enum": ["web_app", "mobile_app", "desktop_app", "ai_agent", "other"],
+      "description": "项目类型 / Project type"
+    },
+    "created_date": {
+      "type": "string",
+      "format": "date",
+      "description": "创建日期 / Creation date"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date",
+      "description": "最后更新日期 / Last updated date"
+    },
+    "gpqs_score": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "总分（0-100）/ Total score"
+        },
+        "dimension_1": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 20,
+          "description": "维度 ① 得分 / Dimension 1 score"
+        },
+        "dimension_2": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 25,
+          "description": "维度 ② 得分 / Dimension 2 score"
+        },
+        "dimension_3": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 20,
+          "description": "维度 ③ 得分 / Dimension 3 score"
+        },
+        "dimension_4": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 15,
+          "description": "维度 ④ 得分 / Dimension 4 score"
+        },
+        "dimension_5": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5,
+          "description": "维度 ⑤ 得分 / Dimension 5 score"
+        },
+        "dimension_6": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5,
+          "description": "维度 ⑥ 得分 / Dimension 6 score"
+        },
+        "dimension_7": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10,
+          "description": "维度 ⑦ 得分 / Dimension 7 score"
+        },
+        "assessment_date": {
+          "type": "string",
+          "format": "date",
+          "description": "评估日期 / Assessment date"
+        },
+        "assessor": {
+          "type": "string",
+          "description": "评估人 / Assessor"
+        }
+      }
+    }
+  }
+}

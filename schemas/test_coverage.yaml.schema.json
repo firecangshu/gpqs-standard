@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Test Coverage Schema",
+  "type": "object",
+  "required": ["validation_level"],
+  "properties": {
+    "validation_level": {
+      "type": "string",
+      "enum": ["V0", "V1", "V2", "V3", "V4", "V5"]
+    },
+    "unit_tests": {
+      "type": "object",
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "coverage_rate": { "type": "number", "minimum": 0, "maximum": 100 },
+        "total_cases": { "type": "number" },
+        "passed_cases": { "type": "number" },
+        "failed_cases": { "type": "number" }
+      }
+    },
+    "integration_tests": { "type": "object" },
+    "system_tests": { "type": "object" },
+    "uat": { "type": "object" },
+    "production_validation": { "type": "object" }
+  }
+}

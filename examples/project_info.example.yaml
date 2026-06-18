@@ -1,0 +1,52 @@
+# 项目基本信息示例 / Project Info Example
+
+```yaml
+# 项目基本信息 / Project Basic Information
+project_name: "踏歌行智策通"
+project_name_en: "Tageting Smart Policy"
+version: "v0.0.4"
+description: |
+  文旅项目战略定位辅助智能体。
+  AI-powered strategic positioning assistant for cultural tourism projects.
+description_en: |
+  AI-powered strategic positioning assistant for cultural tourism projects.
+
+# 技术栈 / Tech Stack
+tech_stack:
+  - "微信小程序 / WeChat Mini Program"
+  - "微信云开发 / WeChat CloudBase"
+  - "JavaScript / WXML / WXSS"
+
+# 负责人 / Owner
+owner:
+  name: "firecangshu"
+  email: "firecangshu@example.com"
+  role: "全栈开发 / Full-stack Developer"
+
+# 项目类型 / Project Type
+project_type: "ai_agent"
+
+# 创建日期 / Creation Date
+created_date: "2026-05-01"
+
+# 最后更新日期 / Last Updated Date
+last_updated: "2026-06-18"
+
+# GPQS 评估结果 / GPQS Assessment Result
+gpqs_score:
+  total: 21  # 预估分数 / Estimated score
+  dimension_1: 5
+  dimension_2: 5
+  dimension_3: 4
+  dimension_4: 3
+  dimension_5: 2
+  dimension_6: 1
+  dimension_7: 1
+  assessment_date: "2026-06-18"
+  assessor: "GPQS 评分工具 / GPQS Scoring Tool"
+```
+
+---
+
+**最后更新**：2026-06-18
+**维护人**：firecangshu

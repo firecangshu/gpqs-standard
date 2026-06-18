@@ -1,0 +1,48 @@
+# 上线准备清单示例 / Deployment Readiness Example
+
+```yaml
+# 上线准备清单 / Deployment Readiness Checklist
+items:
+  - id: "DEP001"
+    name: "环境配置 / Environment Configuration"
+    name_en: "Environment Configuration"
+    description: "生产环境是否已正确配置（数据库、缓存、消息队列等）。"
+    status: "passed"
+    priority: "high"
+
+  - id: "DEP002"
+    name: "监控告警 / Monitoring & Alerting"
+    name_en: "Monitoring & Alerting"
+    description: "是否已配置监控（如 Sentry、New Relic）和告警（如邮件、短信）。"
+    status: "passed"
+    priority: "high"
+
+  - id: "DEP003"
+    name: "回滚方案 / Rollback Plan"
+    name_en: "Rollback Plan"
+    description: "是否有完整的回滚方案（包括数据库回滚、代码回滚）。"
+    status: "passed"
+    priority: "high"
+
+  - id: "DEP004"
+    name: "性能测试 / Performance Testing"
+    name_en: "Performance Testing"
+    description: "是否已进行性能测试（负载测试、压力测试）。"
+    status: "failed"
+    priority: "medium"
+
+  - id: "DEP005"
+    name: "文档更新 / Documentation Update"
+    name_en: "Documentation Update"
+    description: "是否已更新用户文档、API 文档、运维文档。"
+    status: "passed"
+    priority: "low"
+
+# 整体准备度 / Overall Readiness
+overall_readiness: 90
+```
+
+---
+
+**最后更新**：2026-06-18
+**维护人**：firecangshu

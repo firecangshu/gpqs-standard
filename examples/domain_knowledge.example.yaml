@@ -1,0 +1,56 @@
+# 领域知识清单示例 / Domain Knowledge Example
+
+```yaml
+# 领域知识清单 / Domain Knowledge Checklist
+domain: "文化旅游 / Cultural Tourism"
+domain_en: "Cultural Tourism"
+
+# 知识条目 / Knowledge Items
+knowledge_items:
+  - id: "DK001"
+    statement: "文旅项目选址需考虑交通便利性，距离主要客源地不超过 2 小时车程。"
+    statement_en: "Cultural tourism project site selection needs to consider transportation convenience, within 2 hours drive from major tourist sources."
+    source: "GB/T 18972-2017《旅游资源分类、调查与评价》"
+    source_type: "official_doc"
+    practicality: "high"
+    reusability: "high"
+    how_it_changes_behavior: "在项目选址阶段，自动计算与主要客源地的距离，超过 2 小时车程的项目自动标记为高风险。"
+    how_it_changes_behavior_en: "In the project site selection phase, automatically calculate the distance from major tourist sources. Projects exceeding 2 hours drive are automatically marked as high risk."
+    evidence:
+      level: "V3"
+      description: "依据国家标准 GB/T 18972-2017，经过专家评审。"
+      description_en: "Based on national standard GB/T 18972-2017, reviewed by experts."
+
+  - id: "DK002"
+    statement: "文旅项目需避开生态保护红线、永久基本农田、饮用水源保护区。"
+    statement_en: "Cultural tourism projects need to avoid ecological protection red lines, permanent basic farmland, and drinking water source protection areas."
+    source: "《中华人民共和国城乡规划法》"
+    source_type: "official_doc"
+    practicality: "high"
+    reusability: "high"
+    how_it_changes_behavior: "在项目选址阶段，自动调用天地图 API 检查是否触及红线，触及红线的项目自动标记为不可行。"
+    how_it_changes_behavior_en: "In the project site selection phase, automatically call Tianditu API to check if it touches the red line. Projects that touch the red line are automatically marked as not feasible."
+    evidence:
+      level: "V3"
+      description: "依据法律法规，经过真实项目验证。"
+      description_en: "Based on laws and regulations, validated by real projects."
+
+# 专家经验（可选）/ Expert Experience (Optional)
+expert_experience:
+  - id: "EXP001"
+    description: "文旅项目成功的关键是'讲故事'的能力，需要将文化资源转化为游客可感知的体验。"
+    description_en: "The key to success for cultural tourism projects is the ability to 'tell stories', need to transform cultural resources into experiences that tourists can perceive."
+    expert_name: "firecangshu"
+    date: "2026-06-18"
+
+# 放大专家能力（可选）/ Amplify Expert Capability (Optional)
+amplify_expert:
+  enabled: true
+  description: "通过用户交互训练模型，将专家经验转化为可复用的规则，降低后来者的学习门槛。"
+  description_en: "Train the model through user interaction, transform expert experience into reusable rules, lower the learning threshold for later comers."
+```
+
+---
+
+**最后更新**：2026-06-18
+**维护人**：firecangshu

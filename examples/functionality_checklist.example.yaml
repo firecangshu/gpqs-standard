@@ -1,0 +1,43 @@
+# 功能完整性清单示例 / Functionality Checklist Example
+
+```yaml
+# 功能完整性清单 / Functionality Completeness Checklist
+modules:
+  - id: "M001"
+    name: "地块选择 / Land Selection"
+    name_en: "Land Selection"
+    description: "用户输入目标区域，系统推荐候选地块。"
+    status: "complete"
+    reliability: 99
+    test_coverage: 90
+    test_method: "单元测试 + 集成测试"
+    error_handling: true
+
+  - id: "M002"
+    name: "资源调查 / Resource Survey"
+    name_en: "Resource Survey"
+    description: "对候选地块进行文旅资源调查。"
+    status: "complete"
+    reliability: 98
+    test_coverage: 85
+    test_method: "单元测试 + API 测试"
+    error_handling: true
+
+  - id: "M003"
+    name: "政策引导 / Policy Guidance"
+    name_en: "Policy Guidance"
+    description: "检索与地块相关的政策法规。"
+    status: "partial"
+    reliability: 95
+    test_coverage: 70
+    test_method: "单元测试（Mock 数据）"
+    error_handling: true
+
+# 整体可靠性 / Overall Reliability
+overall_reliability: 97
+```
+
+---
+
+**最后更新**：2026-06-18
+**维护人**：firecangshu

@@ -1,0 +1,37 @@
+# 安全与合规性清单示例 / Security Checklist Example
+
+```yaml
+# 安全与合规性清单 / Security & Compliance Checklist
+items:
+  - id: "SEC001"
+    name: "数据加密 / Data Encryption"
+    name_en: "Data Encryption"
+    description: "敏感数据是否加密存储和传输。"
+    status: "passed"
+    risk_level: "high"
+    mitigation: "使用 AES-256 加密存储，HTTPS TLS 1.3 加密传输。"
+
+  - id: "SEC002"
+    name: "权限控制 / Access Control"
+    name_en: "Access Control"
+    description: "是否有完善的权限控制机制。"
+    status: "passed"
+    risk_level: "high"
+    mitigation: "基于 RBAC（角色访问控制）模型，实现细粒度权限管理。"
+
+  - id: "SEC003"
+    name: "安全审计 / Security Audit"
+    name_en: "Security Audit"
+    description: "是否记录安全审计日志。"
+    status: "failed"
+    risk_level: "medium"
+    mitigation: "计划在下个版本中添加审计日志功能。"
+
+# 整体安全评分 / Overall Security Score
+overall_security_score: 85
+```
+
+---
+
+**最后更新**：2026-06-18
+**维护人**：firecangshu

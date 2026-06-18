@@ -1,0 +1,30 @@
+# 可维护性评估示例 / Maintainability Example
+
+```yaml
+# 可维护性评估 / Maintainability Assessment
+code_complexity: "low"
+
+documentation_completeness: "complete"
+
+technical_debt:
+  level: "low"
+  description: "有少量技术债务（如某个模块需要重构），但不影响整体维护。"
+  repaymentPlan: "计划在 V1.1 版本中重构该模块。"
+
+iteration_plan:
+  has_plan: true
+  next_milestone: "V1.1：重构核心模块，提升性能。"
+  date: "2026-07-01"
+
+# 代码质量指标（可选）/ Code Quality Metrics (Optional)
+code_quality:
+  cyclomatic_complexity: 4.5
+  lines_of_code: 5000
+  test_coverage: 75
+  duplicate_rate: 3
+```
+
+---
+
+**最后更新**：2026-06-18
+**维护人**：firecangshu
