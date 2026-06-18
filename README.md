@@ -2,7 +2,9 @@
 
 > 基于 [AVJ (Agent Value Judgment)](https://gitcode.com/team_kaixin/agent-value-judge) 二创的开源项目质量评估标准。
 
-[English](README_EN.md) | [修改说明](MODIFICATIONS.md) | [贡献指南](CONTRIBUTING.md)
+**关键词 / Keywords**: `quality-assurance`, `project-quality`, `scoring-system`, `GPQS`, `AVJ`, `agent-value-judgment`, `code-quality`, `project-management`, `CI/CD`, `DevOps`, `YAML`, `JSON-Schema`, `bilingual`, `open-source`, `standard`, `CLI-tool`, `quality-gates`, `pre-release`, `fork`, `derivative`, `质量保证`, `项目质量`, `评分系统`, `代码质量`, `项目管理`, `持续集成`, `上线前检查`, `中英双语`, `开源`, `标准`, `二创`, `衍生项目`
+
+[English](README_EN.md) | [修改说明](MODIFICATIONS.md) | [贡献指南](CONTRIBUTING.md) | [关键词索引](KEYWORDS.md)
 
 ---
 
